@@ -1,0 +1,22 @@
+body{
+background-image:url(img/daft-punk.jpg);
+background-size:cover;
+}
+
+#mpc{
+width:450px;
+margin:75px 275px;
+height:450px;
+background-color:green;
+}
+
+#mpc button{
+width:112.5px;
+height:112.5px;
+display:block;
+float:left;
+background-color:white;
+transition-property:background-color;
+transition-duration:.5s;
+outline:none;
+}

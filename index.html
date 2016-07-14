@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Daft Punk Sound Machine</title>
+    <link rel="stylesheet" href="style.css">
+    <script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+  </head>
+  <body>
+   
+   
+   <div id="mpc">
+      
+       
+    <button id="test" onclick="myFunction1()">
+      Rock
+  </button>
+  
+  <button id="button2" onclick="myFunction2()">
+      Rock
+  </button>
+  
+  
+  <button id="test" onclick="myFunction()">
+      Rock
+  </button>
+  
+  <button id="test" onclick="myFunction()">
+      Rock
+  </button>
+    
+      
+        
+    <button id="test" onclick="myFunction()">
+      Rock
+  </button>
+  
+  <button id="button2" onclick="myFunction3()">
+      Rock
+  </button>
+  
+  
+  <button id="test" onclick="myFunction()">
+      Rock
+  </button>
+  
+  <button id="test" onclick="myFunction()">
+      Rock
+  </button>
+    
+       
+   </div>
+   
+  
+   
+<audio id="myAudio">
+  <source src="robot.mp3" type="audio/mp3">
+</audio>
+<audio id="myAudio1" preload="auto" src="sound1.mp3" type="audio/mp3">
+</audio>
+<audio id="myAudio2">
+  <source src="sound2.mp3" type="audio/mp3">
+</audio>
+<audio id="myAudio3">
+  <source src="sound3.mp3" type="audio/mp3">
+</audio>
+<audio id="myAudio4">
+  <source src="sound4.mp3" type="audio/mp3">
+</audio>
+    
+    <script>
+      
+ 
+    function getRandomColor() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+        
+        
+   function myFunction(){
+       //play sound
+       sound1.play()
+   }
+        
+ function myFunction2(){
+       //play sound
+       document.getElementById("myAudio1").play();
+       
+   }
+
+document.body.onkeyup = function(e){
+    e.preventDefault();
+    if(e.keyCode == 32){
+      myFunction3();
+    }else if(e.keyCode == 9){
+    myFunction1();
+             }else if(e.keyCode == 65){
+                 
+                myFunction4();
+             }
+}
+        
+ function myFunction3(){
+       //play sound
+       document.getElementById("myAudio2").play();
+   }
+       
+function myFunction1(){
+    
+      document.getElementById("myAudio3").play();
+}
+
+        
+     function myFunction4(){
+       //play sound
+       document.getElementById("myAudio4").play();
+       
+   }
+      
+    </script>
+        
+    
+  </body>
+</html>
